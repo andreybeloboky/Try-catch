@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat {
+public class Cat{
 
     private int age;
     private String name;
