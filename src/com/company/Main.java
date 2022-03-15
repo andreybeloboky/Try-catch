@@ -51,14 +51,14 @@ public class Main {
             System.err.println(e.getCause());
         } catch (InputMismatchException e) {
             System.out.println(e.getMessage());
-            throw new notNumber("The value must be a number");
+            throw new NotNumber("The value must be a number");
         } catch (ArrayIndexOutOfBoundsException e) {
             throw new ArrayIndexOutOfBoundsException("Incorrect number");
         }
     }
 
-    public static class notNumber extends RuntimeException {
-        public notNumber(String message) {
+    public static class NotNumber extends RuntimeException {
+        public NotNumber(String message) {
             super(message);
         }
     }
